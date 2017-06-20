@@ -1,22 +1,22 @@
 <template>
     <div class="menu">
         <ul>
-            <li>
-                <router-link to="/">1</router-link>
-            </li>
-            <li>
-                <router-link to="/">2</router-link>
-            </li>
-            <li>
-                <router-link to="/">3</router-link>
+            <li v-for="item in menuConfig">
+                <router-link :to="item.path">{{item.text}}</router-link>
             </li>
         </ul>
     </div>
 </template>
 
 <script>
-export default {
+import menuConfig from '@/router/config';
 
+export default {
+    data () {
+        return {
+            menuConfig: menuConfig
+        }
+    }
 }
 </script>
 
@@ -28,5 +28,13 @@ export default {
         width: 200px;
         height: 100%;
         border-right: 1px solid #ccc;
+    }
+    .menu a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .menu .router-link-exact-active {
+        color: red;
     }
 </style>

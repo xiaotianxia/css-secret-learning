@@ -1,15 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/pages/Index'
+
+import routerConfig from '@/router/config';
 
 Vue.use(Router)
 
 export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'Index',
-            component: Index
-        }
-    ]
+    routes: routerConfig
 })
