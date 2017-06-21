@@ -1,18 +1,13 @@
-import Test from '@/pages/Test'
 import Button from '@/pages/Button'
 import SemiTransparentBorder from '@/pages/SemiTransparentBorder'
 import MultipleBorders from '@/pages/MultipleBorders'
 import BgPosition from '@/pages/BgPosition'
 import InnerRounding from '@/pages/InnerRounding'
 import Parallelograms from '@/pages/Parallelograms'
+import DiamondImage from '@/pages/DiamondImage'
+import Filter from '@/pages/Filter'
 
 let config = [
-    {
-        path: '/',
-        name: 'Test',
-        text: 'test',
-        component: Test
-    },
     {
         path: '/button',
         name: 'Button',
@@ -48,6 +43,18 @@ let config = [
         name: 'Parallelograms',
         text: '平行四边形',
         component: Parallelograms
+    },
+    {
+        path: '/diamond-image',
+        name: 'DiamondImage',
+        text: '菱形图片',
+        component: DiamondImage
+    },
+    {
+        path: '/fiter',
+        name: 'Filter',
+        text: '滤镜',
+        component: Filter
     }
 ];
 export default config;

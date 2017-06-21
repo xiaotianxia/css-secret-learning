@@ -28,10 +28,12 @@ export default {
         width: 200px;
         height: 100%;
         border-right: 1px solid #ccc;
+        overflow: auto;
     }
     .menu ul {
         margin: 0;
-        padding: 0;
+        padding: 10px 0;
+        background-color: #DCDCDC;
     }
     .menu ul li {
         height: 30px;
@@ -39,7 +41,6 @@ export default {
         margin: 0;
         list-style: none;
         text-align: center;
-        background-color: #DCDCDC;
     }
     .menu ul li:hover {
         background-color: #778899;
