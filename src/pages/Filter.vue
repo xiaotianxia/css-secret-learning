@@ -10,7 +10,8 @@
                     </div>
                     <div class="control">
                         <input type="range" :value="blur" v-model="blur" min="0" max="100" step="1">
-                        <input type="number" :value="blur" v-model="blur" min="0" max="100" step="1">px
+                        <input type="number" :value="blur" v-model="blur" min="0" max="100" step="1">
+                        <span>px</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -29,6 +30,7 @@ filter: blur(<span>{{blur}}</span>px);
                     <div class="control">
                         <input type="range" :value="brightness" v-model="brightness" min="0" max="100" step="1">
                         <input type="number" :value="brightness" v-model="brightness" min="0" max="100" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -46,7 +48,8 @@ filter: brightness(<span>{{brightness}}</span>);
                     </div>
                     <div class="control">
                         <input type="range" :value="contrast" v-model="contrast" min="0" max="100" step="1">
-                        <input type="number" :value="contrast" v-model="contrast" min="0" max="100" step="1">%
+                        <input type="number" :value="contrast" v-model="contrast" min="0" max="100" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -64,7 +67,8 @@ filter: contrast(<span>{{contrast}}</span>%);
                     </div>
                     <div class="control">
                         <input type="range" :value="grayscale" v-model="grayscale" min="0" max="100" step="1">
-                        <input type="number" :value="grayscale" v-model="grayscale" min="0" max="100" step="1">%
+                        <input type="number" :value="grayscale" v-model="grayscale" min="0" max="100" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -82,7 +86,8 @@ filter: grayscale(<span>{{grayscale}}</span>%);
                     </div>
                     <div class="control">
                         <input type="range" :value="huerotate" v-model="huerotate" min="0" max="360" step="1">
-                        <input type="number" :value="huerotate" v-model="huerotate" min="0" max="360" step="1">deg
+                        <input type="number" :value="huerotate" v-model="huerotate" min="0" max="360" step="1">
+                        <span>deg</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -100,7 +105,8 @@ filter: hue-rotate(<span>{{huerotate}}</span>deg);
                     </div>
                     <div class="control">
                         <input type="range" :value="invert" v-model="invert" min="0" max="100" step="1">
-                        <input type="number" :value="invert" v-model="invert" min="0" max="100" step="1">%
+                        <input type="number" :value="invert" v-model="invert" min="0" max="100" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -118,7 +124,8 @@ filter: invert(<span>{{invert}}</span>%);
                     </div>
                     <div class="control">
                         <input type="range" :value="opacity" v-model="opacity" min="0" max="100" step="1">
-                        <input type="number" :value="opacity" v-model="opacity" min="0" max="100" step="1">%
+                        <input type="number" :value="opacity" v-model="opacity" min="0" max="100" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -136,7 +143,8 @@ filter: opacity(<span>{{opacity}}</span>%);
                     </div>
                     <div class="control">
                         <input type="range" :value="saturate" v-model="saturate" min="0" max="300" step="1">
-                        <input type="number" :value="saturate" v-model="saturate" min="0" max="300" step="1">%
+                        <input type="number" :value="saturate" v-model="saturate" min="0" max="300" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -154,7 +162,8 @@ filter: saturate(<span>{{saturate}}</span>%);
                     </div>
                     <div class="control">
                         <input type="range" :value="sepia" v-model="sepia" min="0" max="100" step="1">
-                        <input type="number" :value="sepia" v-model="sepia" min="0" max="100" step="1">%
+                        <input type="number" :value="sepia" v-model="sepia" min="0" max="100" step="1">
+                        <span>%</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -173,6 +182,7 @@ filter: sepia(<span>{{sepia}}</span>%);
                     <div class="control">
                         <input type="range" :value="dropshadow" v-model="dropshadow" min="-100" max="100" step="1">
                         <input type="number" :value="dropshadow" v-model="dropshadow" min="-100" max="100" step="1">
+                        <span>px</span>
                     </div>
                     <div class="code">
                         <pre>
@@ -187,44 +197,74 @@ filter: drop-shadow(<span>{{dropshadow}}px
                 <div class="container">
                     <h3>混合操作</h3>
                     <div class="control">
-                        <input type="range" :value="blurMixed" v-model="blurMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="blurMixed" v-model="blurMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasBlur" v-model="hasBlur">
+                            <span>blur</span>
+                        </label>
+                        <input type="range" :value="blurMixed" v-model="blurMixed" min="0" max="100" step="1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="brightnessMixed" v-model="brightnessMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="brightnessMixed" v-model="brightnessMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasBrightness" v-model="hasBrightness">
+                            <span>brightness</span>
+                        </label>
+                        <input type="range" :value="brightnessMixed" v-model="brightnessMixed" min="0.1" max="10" step="0.1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="contrastMixed" v-model="contrastMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="contrastMixed" v-model="contrastMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasContrast" v-model="hasContrast">
+                            <span>contrast</span>
+                        </label>
+                        <input type="range" :value="contrastMixed" v-model="contrastMixed" min="0.1" max="10" step="0.1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="grayscaleMixed" v-model="grayscaleMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="grayscaleMixed" v-model="grayscaleMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasGrayscale" v-model="hasGrayscale">
+                            <span>grayscale</span>
+                        </label>
+                        <input type="range" :value="grayscaleMixed" v-model="grayscaleMixed" min="0" max="1" step="0.1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="huerotateMixed" v-model="huerotateMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="huerotateMixed" v-model="huerotateMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hashueRotate" v-model="hashueRotate">
+                            <span>hue-rotate</span>
+                        </label>
+                        <input type="range" :value="huerotateMixed" v-model="huerotateMixed" min="0" max="360" step="1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="invertMixed" v-model="invertMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="invertMixed" v-model="invertMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasInvert" v-model="hasInvert">
+                            <span>invert</span>
+                        </label>
+                        <input type="range" :value="invertMixed" v-model="invertMixed" min="0" max="100" step="1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="opacityMixed" v-model="opacityMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="opacityMixed" v-model="opacityMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasOpacity" v-model="hasOpacity">
+                            <span>opacity</span>
+                        </label>
+                        <input type="range" :value="opacityMixed" v-model="opacityMixed" min="0" max="100" step="1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="saturateMixed" v-model="saturateMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="saturateMixed" v-model="saturateMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasSaturate" v-model="hasSaturate">
+                            <span>saturate</span>
+                        </label>
+                        <input type="range" :value="saturateMixed" v-model="saturateMixed" min="0" max="300" step="1">
                     </div>
                     <div class="control">
-                        <input type="range" :value="sepiaMixed" v-model="sepiaMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="sepiaMixed" v-model="sepiaMixed" min="-100" max="100" step="1">
+                        <label>
+                            <input type="checkbox" :value="hasSepia" v-model="hasSepia">
+                            <span>sepia</span>
+                        </label>
+                        <input type="range" :value="sepiaMixed" v-model="sepiaMixed" min="0" max="100" step="1">
                     </div>
                     <div class="control">
+                        <label>
+                            <input type="checkbox" :value="hasdropShadow" v-model="hasdropShadow">
+                            <span>drop-shadow</span>
+                        </label>
                         <input type="range" :value="dropshadowMixed" v-model="dropshadowMixed" min="-100" max="100" step="1">
-                        <input type="number" :value="dropshadowMixed" v-model="dropshadowMixed" min="-100" max="100" step="1">
                     </div>
                 </div>
             </li>
@@ -234,9 +274,6 @@ filter: drop-shadow(<span>{{dropshadow}}px
                     <h3>混合效果</h3>
                     <div class="img">
                         <img :style="mixedStyle" src="../../static/image/tiger.jpg">
-                    </div>
-                    <div class="code">
-
                     </div>
                 </div>
             </li>
@@ -260,15 +297,26 @@ export default {
             dropshadow: 0,
 
             blurMixed: 0,
-            brightnessMixed: 100,
-            contrastMixed: 0,
+            brightnessMixed: 1.1,
+            contrastMixed: 8,
             grayscaleMixed: 0,
-            huerotateMixed: 180,
+            huerotateMixed: 10,
             invertMixed: 0,
             opacityMixed: 100,
-            saturateMixed: 0,
-            sepiaMixed: 0,
+            saturateMixed: 200,
+            sepiaMixed: 20,
             dropshadowMixed: 0,
+
+            hasBlur: true,
+            hasBrightness: true,
+            hasContrast: true,
+            hasGrayscale: true,
+            hashueRotate: true,
+            hasInvert: true,
+            hasOpacity: true,
+            hasSaturate: true,
+            hasSepia: true,
+            hasdropShadow: true
         }
     },
 
@@ -334,17 +382,21 @@ export default {
         },
 
         mixedStyle () {
+            let cssStrArr = [
+                this.hasBlur ? 'blur(' + this.blurMixed + 'px)': ' ',
+                this.hasBrightness ? 'brightness(' + this.brightnessMixed + ') ': ' ',
+                this.hasContrast ? 'contrast(' + this.contrastMixed + '%) ': ' ',
+                this.hasGrayscale ? 'grayscale(' + this.grayscaleMixed + '%) ': ' ',
+                this.hashueRotate ? 'hue-rotate(' + this.huerotateMixed + 'deg) ': ' ',
+                this.hasInvert ? 'invert(' + this.invertMixed + '%) ': ' ',
+                this.hasOpacity ? 'opacity(' + this.opacityMixed + '%) ': ' ',
+                this.hasSaturate ? 'saturate(' + this.saturateMixed + '%) ': ' ',
+                this.hasSepia ? 'sepia(' + this.sepiaMixed + '%) ': ' ',
+                this.hasdropShadow ? 'drop-shadow(' + this.dropshadowMixed + 'px ' +this.dropshadowMixed + 'px 5px #000)': ' '
+            ],
+            cssStr = cssStrArr.join(' ');
             return {
-                'filter': 'blur(' + this.blurMixed + 'px)'
-                        + 'brightness(' + this.brightnessMixed + ') '
-                        + 'contrast(' + this.contrastMixed + '%) '
-                        + 'grayscale(' + this.grayscaleMixed + '%) '
-                        + 'hue-rotate(' + this.huerotateMixed + 'deg) '
-                        + 'invert(' + this.invertMixed + '%) '
-                        + 'opacity(' + this.opacityMixed + '%) '
-                        + 'saturate(' + this.saturateMixed + '%) '
-                        + 'sepia(' + this.sepiaMixed + '%) '
-                        + 'drop-shadow(' + this.dropshadowMixed + 'px ' +this.dropshadowMixed + 'px 5px #000)'
+                'filter': cssStr
             }
         }
     }
@@ -352,11 +404,10 @@ export default {
 </script>
 
 <style scoped>
-    .filter {
-
-    }
     .filter ul {
         overflow: hidden;
+        max-width: 800px;
+        margin: 0 auto 100px;
     }
     .filter ul li {
         float: left;
@@ -385,13 +436,40 @@ export default {
         vertical-align: middle;
     }
     .filter ul li .control input[type=range] {
-        width: 170px;
-    }
-    .filter ul li.mixed .control input[type=range] {
-        width: 150px;
+        width: 165px;
+        cursor: pointer;
     }
     .filter ul li .control input[type=number] {
-        width: 30px;
+        width: 35px;
+        cursor: pointer;
+    }
+    .filter ul li.mixed .control {
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+    .filter ul li .control label {
+        user-select: none;
+        cursor: pointer;
+    }
+    .filter ul li .control span {
+        font-size: 12px;
+    }
+    .filter ul li.mixed .control span {
+        display: inline-block;
+        font-size: 12px;
+    }
+    .filter ul li.mixed .control span {
+        width: 78px;
+    }
+    .filter ul li.mixed .control input[type=range] {
+        width: 140px;
+    }
+    .filter ul li.mixed .control input[type=number] {
+        font-size: 12px;
+    }
+    .filter ul li.mixed .control input[type=number] {
+        width: 35px;
+        transform: scale(.6);
     }
     .filter ul li .code {
         background-color: #ccc;

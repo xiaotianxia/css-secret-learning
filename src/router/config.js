@@ -6,6 +6,7 @@ import InnerRounding from '@/pages/InnerRounding'
 import Parallelograms from '@/pages/Parallelograms'
 import DiamondImage from '@/pages/DiamondImage'
 import Filter from '@/pages/Filter'
+import BlendMode from '@/pages/BlendMode'
 
 let config = [
     {
@@ -55,6 +56,12 @@ let config = [
         name: 'Filter',
         text: '滤镜',
         component: Filter
+    },
+    {
+        path: '/blend-mode',
+        name: 'BlendMode',
+        text: '混合模式',
+        component: BlendMode
     }
 ];
 export default config;
