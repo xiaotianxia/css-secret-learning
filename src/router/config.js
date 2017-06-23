@@ -7,6 +7,7 @@ import Parallelograms from '@/pages/Parallelograms'
 import DiamondImage from '@/pages/DiamondImage'
 import Filter from '@/pages/Filter'
 import BlendMode from '@/pages/BlendMode'
+import Gradient from '@/pages/Gradient'
 
 let config = [
     {
@@ -62,6 +63,12 @@ let config = [
         name: 'BlendMode',
         text: '混合模式',
         component: BlendMode
+    },
+    {
+        path: '/gradient',
+        name: 'Gradient',
+        text: '渐变',
+        component: Gradient
     }
 ];
 export default config;
