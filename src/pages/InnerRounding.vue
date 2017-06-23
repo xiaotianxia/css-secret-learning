@@ -95,6 +95,7 @@ export default {
 .demo .code pre {
     background-color: #eee;
     padding: 10px;
+    width: 450px;
 }
 .demo .code pre span {
     color: red;
