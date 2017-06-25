@@ -77,19 +77,6 @@ export default {
     .operate ul li {
         list-style: none;
     }
-    .operate .code pre {
-        margin: 0;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-        font-family: courier new;
-        color: #222;
-        background-color: #f1f1f1;
-        border: 1px solid #c3c3c3;
-    }
-    .operate .code pre span {
-        color: red;
-    }
     .display {
         width: 400px;
         margin-left: 20px;

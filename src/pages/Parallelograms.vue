@@ -94,11 +94,6 @@ export default {
 }
 .demo .code pre {
     width: 330px;
-    background-color: #eee;
-    padding: 10px;
-}
-.demo .code pre span {
-    color: red;
 }
 .demo .result {
     margin-left: 30px;

@@ -116,14 +116,6 @@ export default {
     .demo .code li {
         list-style: none;
     }
-    .demo .code pre {
-        width: 450px;
-        background-color: #eee;
-        padding: 10px;
-    }
-    .demo .code pre span {
-        color: red;
-    }
     .demo .result {
         margin-left: 10px;
         color: #fff;

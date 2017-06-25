@@ -31,7 +31,7 @@ let config = [
     {
         path: '/bg-position',
         name: 'BgPosition',
-        text: '灵活的背景定位',
+        text: '背景定位',
         component: BgPosition
     },
     {

@@ -32,7 +32,7 @@ export default {
     }
     .menu ul {
         margin: 0;
-        padding: 10px 0;
+        padding: 0;
         background-color: #DCDCDC;
     }
     .menu ul li {

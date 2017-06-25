@@ -412,7 +412,7 @@ export default {
     .filter ul li {
         float: left;
         width: 240px;
-        height: 265px;
+        height: 310px;
         overflow: hidden;
         background-color: #eee;
         border: 4px solid #dedede;
@@ -422,9 +422,6 @@ export default {
         height: 28px;
         line-height: 28px;
         text-align: center;
-    }
-    .filter ul li  .img {
-
     }
     .filter ul li  .img img {
         width: 100%;
@@ -436,7 +433,7 @@ export default {
         vertical-align: middle;
     }
     .filter ul li .control input[type=range] {
-        width: 165px;
+        width: 162px;
         cursor: pointer;
     }
     .filter ul li .control input[type=number] {
@@ -444,7 +441,7 @@ export default {
         cursor: pointer;
     }
     .filter ul li.mixed .control {
-        margin-bottom: 7px;
+        margin-bottom: 5px;
         font-size: 12px;
     }
     .filter ul li .control label {
@@ -462,7 +459,7 @@ export default {
         width: 78px;
     }
     .filter ul li.mixed .control input[type=range] {
-        width: 140px;
+        width: 130px;
     }
     .filter ul li.mixed .control input[type=number] {
         font-size: 12px;
@@ -476,9 +473,8 @@ export default {
     }
     .filter ul li .code pre {
         padding: 0 5px;
+        margin: 5px 0 0 0;
         text-align: center;
-    }
-    .filter ul li .code pre span {
-        color: red;
+        background-color: #ccc;
     }
 </style>

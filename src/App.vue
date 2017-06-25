@@ -20,11 +20,22 @@ export default {
 </script>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
     .main {
         margin-left: 210px;
+    }
+    pre {
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-family: courier new;
+        color: #222;
+        background-color: #f1f1f1;
+        border: 1px solid #c3c3c3;
+        white-space: pre-wrap;
+        font-size: 12px;
+    }
+    pre span {
+        color: red;
     }
 </style>

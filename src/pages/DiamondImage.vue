@@ -78,12 +78,7 @@ export default {
     background-color: #eee;
 }
 .demo .code pre {
-    background-color: #eee;
-    padding: 10px;
     width: 480px;
-}
-.demo .code pre span {
-    color: red;
 }
 .demo .result {
     margin-left: 10px;
