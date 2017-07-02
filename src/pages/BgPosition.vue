@@ -72,7 +72,7 @@ background-origin: <span>{{cssValue}};</span>
                 <p>CSS代码：</p>
                 <pre>
 background: url('pic.svg') no-repeat #58a bottom right;
-background-position: calc(100% - 20px) calc(100% - 10px);
+background-position: <span>calc(100% - 20px) calc(100% - 10px)</span>;
                 </pre>
             </div>
             <div class="result">

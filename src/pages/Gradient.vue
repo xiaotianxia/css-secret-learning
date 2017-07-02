@@ -146,7 +146,6 @@ export default {
         },
 
         onGradientTypeChange () {
-            console.log(this.gradientType)
             this.createStyle();
         },
 
@@ -163,7 +162,6 @@ export default {
                 'background-image': styleStr,
                 'background-size' : this.backgroundSize1 + ' ' + this.backgroundSize2
             };
-            console.log(this.gradientStyle['background-image'])
         }
     },
 

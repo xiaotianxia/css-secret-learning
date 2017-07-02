@@ -12,6 +12,7 @@
 &lt;a href="#yolo" class="button">
      &lt;div&gt;Click me&lt;/div&gt;
 &lt;/a&gt;
+
 .button {
     transform: skewX(45deg);
 }
@@ -37,10 +38,14 @@
                     <label for="c2">check</label>
                 </div>
                 <pre>
+&lt;a href="#yolo" class="button">
+     &lt;div&gt;Click me&lt;/div&gt;
+&lt;/a&gt;
+
 .button {
     position: relative;
-    <span v-if="backgroundChecked">background: transparent;</span>
-    <span v-if="!backgroundChecked">background: rgba(210, 29, 29, 0.41);</span>
+    <span v-if="!backgroundChecked">background: transparent;</span>
+    <span v-if="backgroundChecked">background: rgba(210, 29, 29, 0.41);</span>
 }
 .button::before {
     content: '';

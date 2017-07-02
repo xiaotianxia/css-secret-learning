@@ -24,7 +24,7 @@
                 <pre>
 .myDiv {
     padding: 25px;
-    border: 10px dotted #000;
+    border: 10px dotted rgba(0, 0, 0, 0.3);
     background-color: yellow;
     background-clip: <span>{{cssValue}}</span>;
 }
