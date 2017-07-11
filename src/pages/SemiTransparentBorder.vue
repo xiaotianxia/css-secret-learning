@@ -24,7 +24,7 @@
                 <pre>
 .myDiv {
     padding: 25px;
-    border: 10px dotted rgba(0, 0, 0, 0.3);
+    border: 10px dashed rgba(0, 0, 0, 0.3);
     background-color: yellow;
     background-clip: <span>{{cssValue}}</span>;
 }
@@ -52,7 +52,7 @@ export default {
         myStyle () {
             return {
                 'padding': '25px',
-                'border': '20px dotted rgba(0, 0, 0, .3)',
+                'border': '20px dashed rgba(0, 0, 0, .3)',
                 'background-color': 'yellow',
                 'background-clip': this.cssValue
             }
