@@ -41,7 +41,6 @@ img {
     <span>clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);</span>
 }
                 </pre>
-                clip-path工具: <a href="http://bennettfeely.com/clippy/" target="_blank">http://bennettfeely.com/clippy/</a>
             </div>
             <div class="result">
                 <p>结果：</p>
