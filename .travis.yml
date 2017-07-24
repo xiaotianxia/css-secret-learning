@@ -1,6 +1,6 @@
 branches:
   only:
-    - master
+    - develop
 
 language: node_js
 
@@ -43,5 +43,5 @@ after_success:
 # Note: you should set Environment Variables here or 'Settings' on travis-ci.org
 env:
   global:
-      GH_REF: https://github.com/xiaotianxia/css-secret-learning.git
+      - GH_REF: https://github.com/xiaotianxia/css-secret-learning.git
     # - GH_TOKEN: 81e119c35149dd3c89ca8a7ea7211f45aade7360
