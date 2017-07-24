@@ -26,7 +26,7 @@ install:
 before_script:
   - git config --global user.name "xiaotianxia"
   - git config --global user.email "wjdaizhen@163.com"
-  - git clone --branch gh-pages https://${GH_REF} dist
+  - git clone --branch gh-pages ${GH_REF} dist
 
 script:
   - npm test
