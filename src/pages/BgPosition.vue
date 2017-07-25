@@ -127,12 +127,12 @@ export default {
     .demo1 .result div {
         width: 180px;
         height: 120px;
-        background: url('../../static/image/pic.svg') no-repeat #58a;
+        background: url('../../static/img/pic.svg') no-repeat #58a;
         background-position: right 20px bottom 10px;
     }
 
     .demo2 .result div {
-        background: url('../../static/image/pic.svg') no-repeat bottom right #58a;
+        background: url('../../static/img/pic.svg') no-repeat bottom right #58a;
         background-position: right 20px bottom 10px;
     }
 
@@ -140,12 +140,12 @@ export default {
         width: 160px;
         height: 100px;
         padding: 10px;
-        background: url('../../static/image/pic.svg') no-repeat #58a bottom right;
+        background: url('../../static/img/pic.svg') no-repeat #58a bottom right;
         border: 10px solid #ccc;
     }
 
     .demo4 .result div {
-        background: url('../../static/image/pic.svg') no-repeat #58a bottom right;
+        background: url('../../static/img/pic.svg') no-repeat #58a bottom right;
         background-position: calc(100% - 20px) calc(100% - 10px);
     }
 </style>

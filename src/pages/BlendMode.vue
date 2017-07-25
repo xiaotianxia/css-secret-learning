@@ -24,7 +24,7 @@ img {
             <div class="result">
                 <p>结果：</p>
                 <div>
-                    <img :style="mixBlendModeStyle" src="../../static/image/2.jpg"/>
+                    <img :style="mixBlendModeStyle" src="../../static/img/2.jpg"/>
                 </div>
             </div>
         </div>
@@ -207,7 +207,7 @@ export default {
 
 .demo2 .result div {
     background-color: hsl(335, 100%, 50%);
-    background-image: url('../../static/image/2.jpg');
+    background-image: url('./static/img/2.jpg');
     background-size: 100%;
 }
 
@@ -215,7 +215,7 @@ export default {
     width: 200px;
     height: 200px;
     text-align: center;
-    background-image: url('../../static/image/texture.jpg');
+    background-image: url('./static/img/texture.jpg');
     background-size: 100%;
 }
 .demo3 .result div p {
@@ -227,7 +227,7 @@ export default {
 }
 
 .demo4 .result div {
-    background-image: linear-gradient(to right, #000000 0%,#ffffff 100%), url('../../static/image/tiger.jpg');
+    background-image: linear-gradient(to right, #000000 0%,#ffffff 100%), url('./static/img/tiger.jpg');
     background-size: 100%, 150%;
 }
 </style>
