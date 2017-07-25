@@ -25,7 +25,7 @@
             <div class="result">
                 <p>结果：</p>
                 <div class="picture">
-                    <img src="../../static/img/2.jpg" alt="..." />
+                    <img src="https://bobo-public.nosdn.127.net/bobo_1500975197877_88134582.jpg" alt="..." />
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ img {
             </div>
             <div class="result">
                 <p>结果：</p>
-                <img src="../../static/img/2.jpg" alt="..." /><br>
+                <img src="https://bobo-public.nosdn.127.net/bobo_1500975197877_88134582.jpg" alt="..." /><br>
             </div>
         </div>
     </div>
